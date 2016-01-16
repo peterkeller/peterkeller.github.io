@@ -1,7 +1,10 @@
 <html>
+<head>
+<link rel="stylesheet" media="all" href="/rouge.css" >
+</head>
 <body>
 {% include header.html %}
-<h1>Post thing?</h1>
+<h1>{{ page.title | smartify }}</h1>
 <div>
 {{ content }}
 </div>

@@ -11,17 +11,35 @@ See:
  - https://github.com/barryclark/jekyll-now
  - http://octopress.org/
 
-## Install jekyll
 
-?
+## Install gem tools on MacOS
+
+Install bundler:
+
+    sudo gem install bundler -n /usr/local/bin
+ 
+On MacOS, see https://github.com/bundler/bundler/issues/4065 for 
+the `-n /usr/local/bin` option.
+    
+Install jekyll
+
+    gem install jekyll -n /usr/local/bin
+
+Install github-pages, see https://github.com/github/pages-gem:
+
+    gem install github-pages -n /usr/local/bin
 
 ## Run jekyll locally
 
+Change directory:
+
+    cd peterkeller.github.io/
+    
 Run:
 
     bundle exec jekyll serve
 
-Or only:
+This does not work, see  see http://stackoverflow.com/questions/31417469/jekyll-ruby-kramdown-missing-dependency:
 
     jekyll serve
 
@@ -29,6 +47,10 @@ See blog locally:
 
  - http://localhost:4000/
  - http://localhost:4000/2014/12/10/why-not.html
+
+Generate site locally and watch chaning files:
+
+    bundle exec jekyll build --watch
 
 
 ## Update GIT posts to Github
@@ -50,6 +72,7 @@ See blog worldwide:
 ## Import from Blogger 
 
 See http://import.jekyllrb.com/docs/blogger/
+
 
 ### Export from Blogger
 
@@ -86,3 +109,9 @@ Copy all in one:
 
 The contents of `_drafts/` and `_posts/` are now updated. Note,
 that you may now have duplicates `*.html` and `*.md`. 
+
+## Various
+
+Create Rouge CSS style sheet:
+
+    rougify style > rouge.css

@@ -3,23 +3,17 @@ title: This is my title
 layout: default
 ---
 
-### Here is my page.
-
-Hello World:
-
-    Code Code
-
 ### My Posts
 <ul>
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
     </li>
   {% endfor %}
 </ul>
 
 <!-- Pagination links -->
+<!--
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
@@ -33,9 +27,10 @@ Hello World:
     <span class="next ">Next</span>
   {% endif %}
 </div>
+-->
 
-
+<!-- shows all contents...  
 <div class="tags">
 My Tags: {{ site.tags.java }}
-
 </div>
+-->
