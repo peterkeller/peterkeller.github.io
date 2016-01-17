@@ -21,13 +21,17 @@ Install bundler:
 On MacOS, see https://github.com/bundler/bundler/issues/4065 for 
 the `-n /usr/local/bin` option.
     
-Install jekyll
+Install jekyll:
 
     gem install jekyll -n /usr/local/bin
 
 Install github-pages, see https://github.com/github/pages-gem:
 
     gem install github-pages -n /usr/local/bin
+
+Install rouge (syntax highlighter):
+
+    gem install kramdown rouge -n /usr/local/bin
 
 ## Run jekyll locally
 
@@ -46,7 +50,6 @@ This does not work, see  see http://stackoverflow.com/questions/31417469/jekyll-
 See blog locally:
 
  - http://localhost:4000/
- - http://localhost:4000/2014/12/10/why-not.html
 
 Generate site locally and watch chaning files:
 
