@@ -12,7 +12,7 @@ blogger_orig_url: http://peter-on-java.blogspot.com/2016/01/gradle-from-zero-to-
 
 The well known `gradle init` task is an easy way to create a Java project: 
 
-{% highlight text %}
+{% highlight sh %}
 > gradle init --type java-library
 {% endhighlight %}   
     
@@ -40,7 +40,7 @@ apply plugin:'templates'
 
 List the tasks:
 
-{% highlight text %}
+{% highlight sh %}
 > gradle tasks
 [...]
 Template tasks
@@ -74,7 +74,7 @@ As you can see, there are many different templates you may use. For our purpose,
 
 Use the `createWebappProject` task for creating a new fresh web project. Invoke the task and answer some questions: 
 
-{% highlight text %}
+{% highlight sh %}
 > gradle createWebappProject
 :createWebappProject
 
@@ -100,7 +100,7 @@ Total time: 25.877 secs
 
 Check the generated files and directories:
 
-{% highlight text %}
+{% highlight sh %}
 > cd testweb/
 > find .
 .
@@ -121,7 +121,7 @@ Check the generated files and directories:
  
  List the tasks: 
 
- {% highlight text %}
+ {% highlight sh %}
 > gradle tasks
 Build tasks
 -----------
@@ -141,13 +141,13 @@ jettyStop - Stops Jetty.
  
 Create the landing page:
 
-{% highlight text %}
+{% highlight sh %}
 > echo "Hello" > src/main/webapp/index.html 
 {% endhighlight %}
  
 And finally, run the web application in Jetty: 
 
-{% highlight text %} 
+{% highlight sh %} 
 > gradle jettyRun
 Starting a new Gradle Daemon for this build (subsequent builds will be faster).
 :compileJava UP-TO-DATE
@@ -159,13 +159,13 @@ Starting a new Gradle Daemon for this build (subsequent builds will be faster).
 Open your browser [http://localhost:8080/testweb/](http://localhost:8080/testweb/) and you should see the welcome message. 
 
 ## Step 3: Create war
-{% highlight text %}
+{% highlight sh %}
 > gradle clean war
 {% endhighlight %}
     
 Check if the web archive is generated:
 
-{% highlight text %}
+{% highlight sh %}
 > find build/libs/
 build/libs/
 build/libs//testweb-0.1.war
