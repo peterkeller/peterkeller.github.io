@@ -11,7 +11,7 @@ blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-71287447947032369
 blogger_orig_url: http://peter-on-java.blogspot.com/2013/11/how-to-check-if-your-iphone-is-unlocked.html
 ---
 
-Steps: 
+Ever wanted to check if you iPhone is locked:
 
  1. Find the IMEI (International Mobile Equipment Identiy) number of your iPhone (Settings -> General -> Info section)
  2. Visit [http://iphoneimei.info/](http://iphoneimei.info/) and enter your IMEI 

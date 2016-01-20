@@ -26,15 +26,15 @@ Unzip the file.
 
 Add following VM arguments when starting your Java standalone client:
 
-{% highlight sh  %}
--javaagent:/path/to/-javaagent:/Developer/Workspace/Java/libs/jolokia-1.2.1/agents/jolokia-jvm.jar
+{% highlight sh %}
+-javaagent:/path/to/-javaagent:/.../jolokia-1.2.1/agents/jolokia-jvm.jar
 {% endhighlight %}    
 
 ## Step 4: Start the Camel route
 
 You should see something similar in your console
 
-{% highlight sh  %}
+{% highlight sh %}
 No access restrictor found, access to all MBean is allowed
 Jolokia: Agent started with URL http://127.0.0.1:8778/jolokia/
 {% endhighlight %}    

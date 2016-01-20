@@ -56,7 +56,9 @@ Start the server process:
 
   JAVA: /Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/bin/java
 
-  JAVA_OPTS:  -server -XX:+UseCompressedOops -Xms64m -Xmx512m -XX:MaxPermSize=256m -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman -Djava.awt.headless=true
+  JAVA_OPTS:  -server -XX:+UseCompressedOops -Xms64m -Xmx512m -XX:MaxPermSize=256m 
+    -Djava.net.preferIPv4Stack=true -Djboss.modules.system.pkgs=org.jboss.byteman 
+    -Djava.awt.headless=true
 
 =========================================================================
 

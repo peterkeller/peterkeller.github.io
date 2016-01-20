@@ -46,7 +46,7 @@ public class MeasurementSite {
     public int hashCode() { 
         final int prime = 31;
         int result = 1;
-        return = prime * result + ((this.getMeasurementSiteId() == null) ? 0 : this.getMeasurementSiteId().hashCode());
+        return = prime * result + ((getMeasurementSiteId() == null) ? 0 : getMeasurementSiteId().hashCode());
     }
 
     @Overrid
@@ -60,12 +60,12 @@ public class MeasurementSite {
         if (!(obj instanceof MeasurementSite)) { 
             return false;
         }
-        final MeasurementSite other = (MeasurementSite)obj;
-        if (this.getInstallationId() == null) {
+        MeasurementSite other = (MeasurementSite)obj;
+        if (installationId == null) {
             if (other.getInstallationId() != null) { 
                 return false;
             }
-        } else if (!this.getMeasurementSiteId().equals(other.getMeasurementSiteId())) { 
+        } else if (!getMeasurementSiteId().equals(other.getMeasurementSiteId())) { 
             return false;
         }
         return true;
@@ -84,7 +84,8 @@ public class MeasurementSiteService implements MeasurementSiteLocal {
     private EntityManager em;
 
     public List<MeasurementSite> findByName(String name) {
-        return em.createQuery("select m from MeasurementSite where m.name like :name")
+        String sql = "select m from MeasurementSite where m.name like :name";
+        return em.createQuery(sql)
             .setParameter("name", name)
             .list();
     }
@@ -106,9 +107,9 @@ public class MeasurementSiteServiceTest {
 
     @Test
     public void findByName() 
-         final MeasurementSiteService s = new MeasurementSiteService();
+         MeasurementSiteService s = new MeasurementSiteService();
          s.setEntityManager(em);
-         final List<MeasurementSite> list = s.findByName("Z%");
+         List<MeasurementSite> list = s.findByName("Z%");
          for (MeasurementSite m: list) {
              Assert.notNull(m);
          }

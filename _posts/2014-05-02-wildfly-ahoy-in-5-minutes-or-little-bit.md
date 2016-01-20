@@ -14,9 +14,9 @@ blogger_orig_url: http://peter-on-java.blogspot.com/2014/05/wildfly-ahoy-in-5-mi
 
 Access [http://www.wildfly.org/](http://www.wildfly.org/)
 
-## Step 2: Download the server</h2>Download Wildfly v8.0.0:
+## Step 2: Download the server
 
-Download from [http://download.jboss.org/wildfly/8.0.0.Final/wildfly-8.0.0.Final.zip](http://download.jboss.org/wildfly/8.0.0.Final/wildfly-8.0.0.Final.zip)
+Download Wildfly v8.0.0 from [http://download.jboss.org/wildfly/8.0.0.Final/wildfly-8.0.0.Final.zip](http://download.jboss.org/wildfly/8.0.0.Final/wildfly-8.0.0.Final.zip)
 
 ## Step 3: Install the server 
 

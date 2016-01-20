@@ -10,16 +10,13 @@ blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-69804806414356465
 blogger_orig_url: http://peter-on-java.blogspot.com/2012/04/reading-and-writing-utc-timestamps-to.html
 ---
 
-## Problem
-
 Reading and writing UTC timestamps to a database when the default timezone may change. E.g., this might happen in an application server if an application running in the same JRE changes the default timezone as follows:    
 
 {% highlight java %} 
 TimeZone.setDefault(TimeZone.getTimeZone("Europe/Zurich")); 
 {% endhighlight %} 
 
-## Solution
-The easiest solution to solve this problem I know is to create an own mapping type extending the standard Hibernate timestamp type <code>org.hibernate.type.TimestampType</code>:  
+The easiest solution to solve this problem I know is to create an own mapping type extending the standard Hibernate timestamp type `org.hibernate.type.TimestampType`:  
 {% highlight java %} 
 package ch.meteoswiss.commons.hibernate;
 
@@ -54,7 +51,9 @@ public class UTCTimestampType extends org.hibernate.type.TimestampType {
     }
 
     @Override
-    public void set(PreparedStatement st, Object value, int index) throws SQLException {
+    public void set(PreparedStatement st, Object value, int index) 
+        throws SQLException {
+            
         Timestamp ts;
         if (value instanceof Timestamp) {
             ts = (Timestamp) value;
