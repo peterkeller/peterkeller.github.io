@@ -36,7 +36,7 @@ footer-links:
 disqusurl: http://peterkeller.github.io # Parameter disqusurl is used for generating unique page.url, workaround for local development
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: 
+google_analytics: UA-72773332-1
 
 #
 # !! You don't need to change any of the configuration flags below !!
