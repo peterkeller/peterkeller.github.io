@@ -18,11 +18,9 @@ layout: default
 
   {% if page.tags.size > 0 %}
         Tags
-        <span class="tag">
         {% for tag in page.tags %}
-            <a href="/tag/#{{ tag | downcase }}">{{ tag | downcase }}</a>{% unless forloop.last %}, {% endunless %} 
+        <span class="tag"><a href="/tag/#{{ tag | downcase }}">{{ tag | downcase }}</a></span>
         {% endfor %}
-        </span>
     {% endif %}
     
   {% include disqus.html disqus_identifier=page.disqus_identifier %}
