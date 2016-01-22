@@ -4,8 +4,8 @@ title: JBoss Wildfly with Apache Camel
 date: '2014-05-02T15:56:00.000+02:00'
 author: Peter Keller
 tags:
-- Java EE
-- Camel
+- javaee
+- camel
 modified_time: '2016-01-15T10:00:15.109+01:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-6333110973531361191
 blogger_orig_url: http://peter-on-java.blogspot.com/2014/05/jboss-wildfly-with-apache-camel.html

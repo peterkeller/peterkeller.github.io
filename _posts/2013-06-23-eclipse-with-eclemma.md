@@ -4,7 +4,7 @@ title: 'Eclipse with Eclemma: java.lang.NoClassDefFoundError: oracle/security/pk
 date: '2013-06-23T21:08:00.000+02:00'
 author: Peter Keller
 tags:
-- IDE
+- ide
 modified_time: '2013-06-23T21:25:23.001+02:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-2916617889118098256
 blogger_orig_url: http://peter-on-java.blogspot.com/2013/06/eclipse-with-eclemma.html

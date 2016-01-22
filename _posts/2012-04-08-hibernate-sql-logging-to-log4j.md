@@ -4,7 +4,7 @@ title: Hibernate SQL Logging to Log4j
 date: '2012-04-08T10:56:00.000+02:00'
 author: Peter Keller
 tags:
-- ORM
+- orm
 modified_time: '2013-06-18T21:56:58.131+02:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-514962415424190405
 blogger_orig_url: http://peter-on-java.blogspot.com/2012/04/hibernate-sql-logging-to-log4j.html

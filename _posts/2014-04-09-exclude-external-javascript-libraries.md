@@ -4,7 +4,7 @@ title: Exclude external JavaScript libraries from beeing validated in Eclipse 4
 date: '2014-04-09T17:30:00.002+02:00'
 author: Peter Keller
 tags:
-- IDE
+- ide
 modified_time: '2014-04-09T17:30:54.999+02:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-8406368211509145182
 blogger_orig_url: http://peter-on-java.blogspot.com/2014/04/exclude-external-javascript-libraries.html

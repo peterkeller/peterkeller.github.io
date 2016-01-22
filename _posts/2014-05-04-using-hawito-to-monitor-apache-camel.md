@@ -4,9 +4,9 @@ title: Using Hawtio to monitor Apache Camel route started as Java standalone pro
 date: '2014-05-04T20:27:00.002+02:00'
 author: Peter Keller
 tags:
-- Monitoring
-- Camel
-- ESB
+- monitoring
+- camel
+- esb
 modified_time: '2014-06-05T07:40:25.467+02:00'
 thumbnail: http://1.bp.blogspot.com/-r7rTYPYrUbM/U2aGSdeOxSI/AAAAAAAAAyc/0SjNSOVBelA/s72-c/hawito.jpg
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-2936295923705811339

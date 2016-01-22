@@ -4,8 +4,8 @@ title: Running Docker on MacOS
 date: '2014-06-06T10:10:00.000+02:00'
 author: Peter Keller
 tags:
-- Docker
-- MacOS
+- docker
+- macos
 modified_time: '2014-06-06T15:03:50.812+02:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-8808282751460316344
 blogger_orig_url: http://peter-on-java.blogspot.com/2014/06/running-docker-on-macos.html

@@ -4,7 +4,7 @@ title: JBoss FUSE ESB vs. Apache ServiceMix vs. Apache Karaf vs. Apache Felix
 date: '2013-06-07T11:53:00.001+02:00'
 author: Peter Keller
 tags:
-- ESB
+- esb
 modified_time: '2014-06-13T15:56:06.840+02:00'
 thumbnail: http://1.bp.blogspot.com/-Nvb88Jaqm1M/UbzYJckIHlI/AAAAAAAAAlU/1H_N4l6ex4w/s72-c/framework_overview.png
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-1758968652103095495

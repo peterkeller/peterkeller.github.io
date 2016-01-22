@@ -4,7 +4,7 @@ title: 'Fun with Oracle DB: ORA-00907'
 date: '2012-03-21T08:42:00.030+01:00'
 author: Peter Keller
 tags:
-- Database
+- database
 modified_time: '2013-06-18T21:54:34.098+02:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-5147247521570663463
 blogger_orig_url: http://peter-on-java.blogspot.com/2012/03/fun-with-oracle-db-ora-00907missing.html

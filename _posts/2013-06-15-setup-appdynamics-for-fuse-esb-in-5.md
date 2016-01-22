@@ -4,8 +4,8 @@ title: ' Setup AppDynamics for JBoss FUSE ESB / Apache ServiceMix in 5 Minutes'
 date: '2013-06-15T22:16:00.000+02:00'
 author: Peter Keller
 tags:
-- Monitoring
-- ESB
+- monitoring
+- esb
 modified_time: '2013-06-23T21:16:47.499+02:00'
 thumbnail: http://1.bp.blogspot.com/-dwT6fA6c6Qc/UbzItTFSMXI/AAAAAAAAAlE/fZax_LgVWl4/s72-c/appdynamics_overview.png
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-7313073903244805374

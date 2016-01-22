@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Init GIT repository on my Google Drive
+title: Init Git repository on my Google Drive
 date: '2014-06-13T15:45:00.001+02:00'
 author: Peter Keller
 tags:
-- Version Control System
-- MacOS
+- vcs
+- macos
 modified_time: '2014-06-13T16:07:13.198+02:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-4658496183554143337
 blogger_orig_url: http://peter-on-java.blogspot.com/2014/06/init-git-repository-on-my-google-drive.html

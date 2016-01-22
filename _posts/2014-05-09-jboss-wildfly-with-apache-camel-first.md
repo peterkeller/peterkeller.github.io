@@ -4,8 +4,8 @@ title: 'JBoss Wildfly with Apache Camel: Unsuccessful test'
 date: '2014-05-09T19:37:00.001+02:00'
 author: Peter Keller
 tags:
-- Java EE
-- Camel
+- javaee
+- camel
 modified_time: '2016-01-15T10:01:10.052+01:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-4124914548937241944
 blogger_orig_url: http://peter-on-java.blogspot.com/2014/05/jboss-wildfly-with-apache-camel-first.html

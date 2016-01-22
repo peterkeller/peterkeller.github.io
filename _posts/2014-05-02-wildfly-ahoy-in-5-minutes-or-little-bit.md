@@ -4,7 +4,7 @@ title: JBoss Wildfly in 5 minutes (or a little bit more, but not much)
 date: '2014-05-02T12:07:00.001+02:00'
 author: Peter Keller
 tags:
-- Java EE
+- javaee
 modified_time: '2016-01-15T09:59:46.768+01:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-1340055066418424567
 blogger_orig_url: http://peter-on-java.blogspot.com/2014/05/wildfly-ahoy-in-5-minutes-or-little-bit.html

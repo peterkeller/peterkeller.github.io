@@ -4,7 +4,7 @@ title: How to set up Eclipse template for inserting Log4j Logger
 date: '2012-06-18T12:30:00.003+02:00'
 author: Peter Keller
 tags:
-- IDE
+- ide
 modified_time: '2015-06-19T08:35:27.648+02:00'
 thumbnail: http://2.bp.blogspot.com/-hERzSHPO80M/T98AdAuwUFI/AAAAAAAAAGg/FHkhqjXRXNk/s72-c/eclipse_log4j_template.png
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-1303711398984363010

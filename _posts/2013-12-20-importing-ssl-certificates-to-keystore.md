@@ -4,7 +4,7 @@ title: Importing SSL Certificates to a Keystore with Java Keytool
 date: '2013-12-20T17:50:00.000+01:00'
 author: Peter Keller
 tags:
-- Cryptography
+- security
 modified_time: '2013-12-20T17:50:26.184+01:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-5945950741133935192
 blogger_orig_url: http://peter-on-java.blogspot.com/2013/12/importing-ssl-certificates-to-keystore.html

@@ -4,7 +4,7 @@ title: JBoss FUSE ESB / Apache ServiceMix Worries...
 date: '2013-06-07T17:31:00.002+02:00'
 author: Peter Keller
 tags:
-- ESB
+- esb
 modified_time: '2013-06-23T21:17:05.831+02:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-5862836593653017471
 blogger_orig_url: http://peter-on-java.blogspot.com/2013/06/fuse-esb-worries.html

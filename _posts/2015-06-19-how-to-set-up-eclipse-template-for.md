@@ -4,7 +4,7 @@ title: How to set up Eclipse template for inserting SLF4J Logger
 date: '2015-06-19T08:42:00.000+02:00'
 author: Peter Keller
 tags:
-- IDE
+- ide
 modified_time: '2015-06-19T08:42:29.325+02:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-3594788144583946749
 blogger_orig_url: http://peter-on-java.blogspot.com/2015/06/how-to-set-up-eclipse-template-for.html
@@ -28,4 +28,5 @@ ${:import(org.slf4j.Logger,org.slf4j.LoggerFactory)}
 
  Note, that there are two import statements generated, one for the `Logger` and another for the `LoggerFactory` class. 
  
- The single steps needed to configure this template in the IDE, is explained in an older post [](here)<a href="http://peter-on-java.blogspot.ch/2012/06/eclipse-template-for-inserting-log4j.html">here</a>. <br/><br/>
+ The single steps needed to configure this template in the IDE, is explained in an older post 
+ [here](2012/04/08/hibernate-sql-logging-to-log4j/)

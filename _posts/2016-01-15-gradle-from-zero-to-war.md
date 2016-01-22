@@ -4,7 +4,7 @@ title: 'Gradle: From zero to war'
 date: '2016-01-15T09:56:00.003+01:00'
 author: Peter Keller
 tags:
-- Buildtool
+- buildtool
 modified_time: '2016-01-15T16:17:20.068+01:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-5847681905042169486
 blogger_orig_url: http://peter-on-java.blogspot.com/2016/01/gradle-from-zero-to-war.html

@@ -1,13 +1,30 @@
-<html>
-<head>
-<link rel="stylesheet" media="all" href="/rouge.css" >
-</head>
-<body>
-{% include header.html %}
-<h1>{{ page.title | smartify }}</h1>
-<div>
-{{ content }}
-</div>
-{% include footer.html %}
-</body>
-</html>
+---
+layout: default
+---
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+
+  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
+      
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  {% if post.blogger_orig_url %}
+  <br />
+  Original post: <a href="{{ post.blogger_orig_url }}">{{ post.blogger_orig_url }}</a>
+  {% endif %}
+
+  {% if page.tags.size > 0 %}
+        Tags
+        <span class="tag">
+        {% for tag in page.tags %}
+            <a href="/tag/#{{ tag | downcase }}">{{ tag | downcase }}</a>{% unless forloop.last %}, {% endunless %} 
+        {% endfor %}
+        </span>
+    {% endif %}
+    
+  {% include disqus.html disqus_identifier=page.disqus_identifier %}
+
+</article>

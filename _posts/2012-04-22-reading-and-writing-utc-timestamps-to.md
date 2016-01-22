@@ -4,7 +4,7 @@ title: Reading and Writing UTC Timestamps to DB with Hibernate
 date: '2012-04-22T22:46:00.001+02:00'
 author: Peter Keller
 tags:
-- ORM
+- orm
 modified_time: '2013-06-18T21:56:31.691+02:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-6980480641435646536
 blogger_orig_url: http://peter-on-java.blogspot.com/2012/04/reading-and-writing-utc-timestamps-to.html

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: How to check if your iPhone is unlocked or not?
+title: How to check if your iPhone is unlocked or not
 date: '2013-11-02T20:23:00.002+01:00'
 author: Peter Keller
 tags:
-- iPhone
+- iphone
 modified_time: '2013-11-02T20:23:35.610+01:00'
 thumbnail: http://2.bp.blogspot.com/-5vy3s0MkOJU/UnVQSQHgLSI/AAAAAAAAAtw/lsdE7zKKP50/s72-c/imei.png
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-7128744794703236956

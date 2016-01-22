@@ -4,7 +4,7 @@ title: Migrating Plug-in Configuration when updating Eclipse Release
 date: '2013-04-21T20:08:00.001+02:00'
 author: Peter Keller
 tags:
-- IDE
+- ide
 modified_time: '2013-06-18T21:56:02.534+02:00'
 thumbnail: http://2.bp.blogspot.com/-05dgt6G2DXo/UHFaZkoYXII/AAAAAAAAAHE/PB7JK-3VZ6U/s72-c/eclipse-export.png
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-3592347888813412781

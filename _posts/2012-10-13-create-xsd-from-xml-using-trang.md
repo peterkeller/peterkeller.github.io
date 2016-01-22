@@ -4,7 +4,7 @@ title: Create an XSD from XML using Trang
 date: '2012-10-13T17:32:00.001+02:00'
 author: Peter Keller
 tags:
-- XML
+- xml
 modified_time: '2012-10-13T17:33:41.562+02:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-8680870586419861372
 blogger_orig_url: http://peter-on-java.blogspot.com/2012/10/create-xsd-from-xml-using-trang.html

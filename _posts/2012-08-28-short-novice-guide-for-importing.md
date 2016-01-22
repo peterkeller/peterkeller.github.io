@@ -4,7 +4,7 @@ title: Short novice guide for importing a project to Subversion
 date: '2012-08-28T17:26:00.001+02:00'
 author: Peter Keller
 tags:
-- Version Control System
+- vcs
 modified_time: '2014-06-13T15:49:39.892+02:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-3822301717428308450
 blogger_orig_url: http://peter-on-java.blogspot.com/2012/08/short-novice-guide-for-importing.html

@@ -4,7 +4,7 @@ title: Running Node.js in Docker
 date: '2014-06-06T17:27:00.001+02:00'
 author: Peter Keller
 tags:
-- Docker
+- docker
 modified_time: '2014-06-06T17:32:35.023+02:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-5116107384947732474
 blogger_orig_url: http://peter-on-java.blogspot.com/2014/06/running-nodejs-in-docker.html

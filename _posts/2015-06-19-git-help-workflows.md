@@ -1,9 +1,10 @@
 ---
 layout: post
-title: git help workflows
+title: Git help workflows
 date: '2015-06-19T08:56:00.000+02:00'
 author: Peter Keller
-tags: 
+tags:
+- vcs
 modified_time: '2015-06-19T08:56:13.610+02:00'
 blogger_id: tag:blogger.com,1999:blog-7980432895360710298.post-7692724263320792000
 ---
