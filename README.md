@@ -4,11 +4,11 @@
 
 See:
 
+ - https://github.com/barryclark/jekyll-now
  - http://jekyllrb.com/docs/configuration/
  - https://help.github.com/articles/using-jekyll-with-pages/
  - http://jekyllbootstrap.com/
  - http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/
- - https://github.com/barryclark/jekyll-now
  - http://octopress.org/
 
 
@@ -33,6 +33,7 @@ Install rouge (syntax highlighter):
 
     gem install kramdown rouge -n /usr/local/bin
 
+
 ## Run jekyll locally
 
 Change directory:
@@ -51,7 +52,8 @@ See blog locally:
 
  - http://localhost:4000/
 
-Generate site locally and watch chaning files:
+Generate site locally without serving a server and watch changing files 
+(when using `serve` then you don\'t need this):
 
     bundle exec jekyll build --watch
 
@@ -89,6 +91,7 @@ Export Blogger posts see https://support.google.com/blogger/answer/41387?rd=1
 File export will be downloaded to /Users/peter/Downloads. File is
 named `blog-MM-DD-YYYY.xml`, e.g. `blog-01-16-2016.xml`.
 
+
 ### Read export and create/update posts and drafts
 
 Install tool:
@@ -113,8 +116,23 @@ Copy all in one:
 The contents of `_drafts/` and `_posts/` are now updated. Note,
 that you may now have duplicates `*.html` and `*.md`. 
 
-## Various
+
+## Rouge highlighting
 
 Create Rouge CSS style sheet:
 
-    rougify style > rouge.css
+    rougify style > _rouge.css
+    
+Move to _scss directory and link it in styles.scss    
+
+
+## Paging
+
+See http://jekyllrb.com/docs/pagination/
+
+For the pagination to work
+
+- In `_config.yml` set `paginate: 1` (
+- Name the landing page to `index.html`. If it is `index.md` it will
+not work (as stated on the jekyll web site) 
+    
