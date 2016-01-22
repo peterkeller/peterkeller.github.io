@@ -1,3 +1,74 @@
+#
+# Flags below are optional
+#
+
+# Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
+# Used for Sitemap.xml and your RSS feed
+url: http://peterkeller.github.io
+name: Peter-On-Java
+author: Peter Keller
+description: Just another blog about the Java programming language
+
+# If you're hosting your site at a Project repository on GitHub pages 
+# (http://yourusername.github.io/repository-name)
+# and NOT your User repository (http://yourusername.github.io)
+# then add in the baseurl here, like this: "/repository-name"
+#baseurl: "http://peterkeller.github.io" # if enabled local, setup doesn't work any more
+
+# Setup
+title: Peter-On-Java
+tagline: Another blog about the Java programming language
+
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble: 
+  email:
+  facebook: 
+  flickr: 
+  github: peterkeller
+  instagram: 
+  linkedin: peter-keller-4a7325a0
+  pinterest: 
+  rss: true  # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: kellerbaur
+  stackoverflow: users/2011748/peter-keller
+
+disqusurl: http://peterkeller.github.io # Parameter disqusurl is used for generating unique page.url, workaround for local development
+
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+google_analytics: 
+
+#
+# !! You don't need to change any of the configuration flags below !!
+#
+
+# Pagination only works if this is set and if start page is index.html
+paginate: 5
+
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink: pretty
+relative_permalinks: true
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  sass_dir: _scss
+  style: :expanded # You might prefer to minify using :compressed
+
+# Use the following plug-ins
+gems:
+  - jemoji # Emoji please!
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  
+# Exclude these files from your production _site
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+
+# Some defaults  
 afe: true
 lsi: false
 defaults:

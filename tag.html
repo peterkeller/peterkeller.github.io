@@ -1,0 +1,47 @@
+---
+layout: default
+title: Blog Posts by Tag
+desc: "A list of Peter's blog posts organized by tags"
+permalink: /tag/
+sitemap:
+  priority: .5
+---
+
+<!-- 
+    http://www.jokecamp.com/blog/listing-jekyll-posts-by-tag/ 
+    https://github.com/jokecamp/jokecamp.com
+-->
+
+<h1>Blog Posts by Tag</h1>
+
+Click on a tag to see relevant list of posts.
+
+{% assign tags = site.tags | sort %}
+
+<ul class="tags">
+{% for tag in tags %}
+  {% assign t = tag | first %}
+  <li><a href="/tag/#{{t | downcase | replace:" ","-" }}">{{ t | downcase }}</a></li>
+{% endfor %}
+</ul>
+
+{% for tag in tags %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  {% assign sorted = posts | sort: 'date' %}
+    <h2>
+      <a name="{{ t | downcase }}"></a> {{ t | downcase }} 
+      <span style="font-size:0.7em">({{ posts | size }} {% if posts.size == 1 %}post{% else %}posts{% endif %})</span> 
+    </h2>
+    <ul>
+    {% for post in sorted %}
+        {% if post.tags contains t %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+        </li>
+        {% endif %}
+    {% endfor %}
+    </ul>
+{% endfor %}
+
