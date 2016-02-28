@@ -27,7 +27,7 @@ footer-links:
   flickr: 
   github: peterkeller
   instagram: 
-  linkedin: peter-keller-4a7325a0
+  linkedin: kellerbaur
   pinterest: 
   rss: true  # just type anything here for a working RSS icon, make sure you set the "url" above!
   twitter: kellerbaur
@@ -42,7 +42,7 @@ google_analytics: UA-72773332-1
 # !! You don't need to change any of the configuration flags below !!
 #
 
-# Pagination only works if this is set and if start page is index.html
+# Pagination only works if the paginage property is set and if start page is index.html
 paginate: 5
 
 # Permalinks
@@ -58,8 +58,9 @@ sass:
 
 # Use the following plug-ins
 gems:
-  - jemoji # Emoji please!
+  - jemoji # Emoji please! Use shortcodes, see http://emoji.codes/. Examples: :bug:  :grinning:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+  # - jekyll-feed
   
 # Exclude these files from your production _site
 exclude:
@@ -69,12 +70,13 @@ exclude:
   - README.md
 
 # Some defaults  
-afe: true
-lsi: false
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts"
-    values:
-      layout: "default"
+#afe: true
+#lsi: false
+
+#defaults:
+#  -
+#    scope:
+#      path: "" # an empty string here means all files in the project
+#      type: "posts"
+#    values:
+#      layout: "default"
