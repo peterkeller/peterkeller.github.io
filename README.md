@@ -44,11 +44,10 @@ Run:
 
     bundle exec jekyll serve
 
-This does not work, see  see http://stackoverflow.com/questions/31417469/jekyll-ruby-kramdown-missing-dependency:
+Note: `jekyll serve` does not work, see 
+http://stackoverflow.com/questions/31417469/jekyll-ruby-kramdown-missing-dependency:
 
-    jekyll serve
-
-See blog locally:
+Access the blog locally with your browser:
 
  - http://localhost:4000/
 
