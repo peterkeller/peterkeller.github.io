@@ -16,7 +16,7 @@ using the Docker image provided by [https://github.com/wnameless/docker-oracle-x
 
 ## Step 1: Start Docker
 
-Start formerly installed `default` docker instance using `docker-machine`
+Start formerly installed `default` docker instance using `docker-machine`:
 
 {% highlight sh %}
 > docker-machine ls

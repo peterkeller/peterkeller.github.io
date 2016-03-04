@@ -44,7 +44,7 @@ default   *        virtualbox   Stopped                 Unknown
 {% endhighlight %}
 
 
-## Step 3: Start Docker daemon
+## Step 3: Start Docker daemon
 
 {% highlight sh %}
 > docker-machine start default 
@@ -159,6 +159,7 @@ bash-4.1# java -version
 java version "1.7.0_71"
 {% endhighlight %}
 
+
 ## Step 8: Check status of container from MacOS
 
 {% highlight sh %}
@@ -227,6 +228,7 @@ Found 2 items
 drwxr-xr-x   - root supergroup          0 2016-02-28 05:03 input
 drwxr-xr-x   - root supergroup          0 2016-02-28 06:04 output
 {% endhighlight %}
+
 
 ## Step 10: Find more info
 
