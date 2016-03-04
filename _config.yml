@@ -8,6 +8,7 @@ url: http://peterkeller.github.io
 name: Peter-On-Java
 author: Peter Keller
 description: Just another blog about the Java programming language
+markdown: kramdown
 
 # If you're hosting your site at a Project repository on GitHub pages 
 # (http://yourusername.github.io/repository-name)
@@ -42,7 +43,7 @@ google_analytics: UA-72773332-1
 # !! You don't need to change any of the configuration flags below !!
 #
 
-# Pagination only works if the paginage property is set and if start page is index.html
+# Pagination only works if the paginage property is set and if start page is named index.html
 paginate: 5
 
 # Permalinks
