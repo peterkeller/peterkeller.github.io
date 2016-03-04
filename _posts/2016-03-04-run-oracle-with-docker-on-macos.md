@@ -16,7 +16,7 @@ using the Docker image provided by [https://github.com/wnameless/docker-oracle-x
 
 ## Step 1: Start Docker
 
-Start formerly installed `default` docker instance using `docker-machine`:
+Start formerly installed `default` Docker instance using `docker-machine`:
 
 {% highlight sh %}
 > docker-machine ls
@@ -25,7 +25,7 @@ default   -        virtualbox   Saved                 Unknown
 > docker-machine start default
 {% endhighlight %}
 
-Check: 
+Check if the Docker instance is running: 
 
 {% highlight sh %}
 > docker-machine ls    
@@ -33,29 +33,29 @@ NAME      ACTIVE   DRIVER       STATE     URL                         SWARM   DO
 default   *        virtualbox   Running   tcp://192.168.99.100:2376           v1.10.2   
 {% endhighlight %}
 
-Set enviromnental parameters:
+Set enviromnental parameters to be able to commumicate with the Docker instance:
 
 {% highlight sh %}
 eval $(docker-machine env)
 {% endhighlight %}
 
-## Step 2: Pull or build
+## Step 2: Pull or build Docker image
 
-Build on your own:
+Build the Docker image on your own:
 {% highlight sh %}
 > git clone https://github.com/wnameless/docker-oracle-xe-11g
 > cd docker-oracle-xe-11g
 > docker build  -t wnameless/oracle-xe-11g .
 {% endhighlight %}
 
-Check:
+Check the image:
 {% highlight sh %}
 docker images     
 REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
 wnameless/oracle-xe-11g    latest              45bd9967896a        About an hour ago   2.389 GB
 {% endhighlight %}
 
-Or just pull it from the repository (lazy way):
+Or just pull the image from the repository (lazy way):
 
 {% highlight sh %}
 > docker pull wnameless/oracle-xe-11g
