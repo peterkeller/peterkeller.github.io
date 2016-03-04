@@ -13,7 +13,8 @@ modified_time: '2016-03-04T12:02:20.068+01:00'
 This post shows how to build and start Oracle XE on MacOS
 using the Docker image provided by [https://github.com/wnameless/docker-oracle-xe-11g](https://github.com/wnameless/docker-oracle-xe-11g).
 
-## Step 1: Start Docker
+
+## Step 1: Start Docker
 
 Start formerly installed `default` docker instance using `docker-machine`
 
@@ -38,7 +39,7 @@ Set enviromnental parameters:
 eval $(docker-machine env)
 {% endhighlight %}
 
-## Step 2: Pull or build
+## Step 2: Pull or build
 
 Build on your own:
 {% highlight sh %}
@@ -60,7 +61,7 @@ Or just pull it from the repository (lazy way):
 > docker pull wnameless/oracle-xe-11g
 {% endhighlight %}
 
-## Step 3: Run
+## Step 3: Run
 
 Run the container with 22 and 1521 ports opened:
 
