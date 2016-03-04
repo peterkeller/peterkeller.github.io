@@ -20,21 +20,21 @@ modified_time: '2016-01-17'
 
     {{ post.content }}
     
-    <br />
+    {% if post.blogger_orig_url %}
+    <p class="original separated">
+        Original post: <a href="{{ post.blogger_orig_url }}">{{ post.blogger_orig_url }}</a>
+    </p>
+    {% endif %}
     
     {% if post.tags.size > 0 %}
+    <p class="separated"> 
         Tags 
         {% for tag in post.tags %}
         <span class="tag"><a href="/tag/#{{ tag | downcase }}">{{ tag | downcase }}</a></span>
         {% endfor %}
+    </p>
     {% endif %}
     
-    <br />
-    
-    {% if post.blogger_orig_url %}
-    <br />
-    Original post: <a href="{{ post.blogger_orig_url }}">{{ post.blogger_orig_url }}</a>
-    {% endif %}
   </article>
   
   {% endfor %}
@@ -42,6 +42,7 @@ modified_time: '2016-01-17'
 </div>
 
 {% include paging.html %}
+ 
 
 
 
