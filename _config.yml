@@ -48,9 +48,7 @@ paginate: 5
 
 # Permalinks
 #
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink: pretty
-relative_permalinks: true
 
 # Set the Sass partials directory, as we're using @imports
 sass:
