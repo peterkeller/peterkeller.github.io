@@ -97,7 +97,7 @@ The `hadoop-docker` has been created. Step into it, for the further processing:
 {% endhighlight %}
 
 
-## Step 6: Build the Docker image
+## Step 6: Build the Docker image
 
 Build the the Hadoop Docker image:
 
@@ -129,7 +129,7 @@ Alternatively, you may just pull the image instead of building it yourself:
 {% endhighlight %}
 
 
-## Step 7: Run the Docker container
+## Step 7: Run the Docker container
 
 Run the Docker container:
 
