@@ -15,9 +15,12 @@ using the Docker image provided by [https://github.com/wnameless/docker-oracle-x
 
 ## Step 1: Start Docker
 
-Start formerly installed `default` docker instance using `docker-machine`:
+Start formerly installed `default` docker instance using `docker-machine`
 
 {% highlight sh %}
+> docker-machine ls
+NAME      ACTIVE   DRIVER       STATE   URL   SWARM   DOCKER    ERRORS
+default   -        virtualbox   Saved                 Unknown   
 > docker-machine start default
 {% endhighlight %}
 
@@ -29,6 +32,11 @@ NAME      ACTIVE   DRIVER       STATE     URL                         SWARM   DO
 default   *        virtualbox   Running   tcp://192.168.99.100:2376           v1.10.2   
 {% endhighlight %}
 
+Set enviromnental parameters:
+
+{% highlight sh %}
+eval $(docker-machine env)
+{% endhighlight %}
 
 ## Step 2: Pull or build
 
@@ -36,10 +44,17 @@ Build on your own:
 {% highlight sh %}
 > git clone https://github.com/wnameless/docker-oracle-xe-11g
 > cd docker-oracle-xe-11g
-> 
+> docker build  -t wnameless/oracle-xe-11g .
 {% endhighlight %}
 
-Pull (lazy way):
+Check:
+{% highlight sh %}
+docker images     
+REPOSITORY                 TAG                 IMAGE ID            CREATED             SIZE
+wnameless/oracle-xe-11g    latest              45bd9967896a        About an hour ago   2.389 GB
+{% endhighlight %}
+
+Or just pull it from the repository (lazy way):
 
 {% highlight sh %}
 > docker pull wnameless/oracle-xe-11g
@@ -47,7 +62,7 @@ Pull (lazy way):
 
 ## Step 3: Run
 
-Run with 22 and 1521 ports opened:
+Run the container with 22 and 1521 ports opened:
 
 {% highlight sh %}
 >  docker run -d -p 49160:22 -p 49161:1521 wnameless/oracle-xe-11g
@@ -55,7 +70,7 @@ Run with 22 and 1521 ports opened:
 
 ## Step 4: Test
 
-Connect with DB client, e.g. SQLDeveloper, using default settings:
+Connect to database with DB client, e.g. SQLDeveloper, using default settings:
 
 {% highlight text %}
 hostname: ~~localhost~~ <IP>
