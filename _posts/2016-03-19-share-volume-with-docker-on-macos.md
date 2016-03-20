@@ -10,7 +10,7 @@ modified_time: '2016-03-19T12:02:20.068+01:00'
 ---
 
 This post shows how to share any MacOS volume in a Docker container. We use
-docker-machine with boot2docker together with VirtualBox on MacOS. See older posts of mine
+docker-machine together with VirtualBox on MacOS. See older posts of mine
 how this can be done.
 
 ## Share user home directory
@@ -91,12 +91,12 @@ This was easy, the `-v` did the job.
 ## Share any directory
 
 Mapping a directory in the user home was easy, as this directory is mounted
-automatically in docker-machine. However, this is not the case for directories
+automatically in boot2docker. However, this is not the case for directories
 outside of the user home directory as we will see below.
 
 ### Step 0: Setup
 
-First let's see what's in the MacOS `/Projects/hadoop` directory that we want to map:
+First, let's see what's in the MacOS `/Projects/hadoop` directory that we want to map:
 
 {% highlight sh %}
 > cd /Projects/hadoop
@@ -105,7 +105,7 @@ build/  build.gradle  settings.gradle  src/
 {% endhighlight %}  
 
 In our case, we are especially interested in the `build` directory with the 
-the generated Hadoop Map/Reduce libraries we want to use in the Hadoop Docker 
+generated Hadoop Map/Reduce libraries we want to use in the Hadoop Docker 
 container. 
 
 ### Step 1: Map
@@ -164,7 +164,7 @@ is mounted in boot2docker per default and not any other.
 Two additional steps are needed:
 
 - Map the volume in VirtualBox
-- Mounte the volume in boot2dockker
+- Mount the volume in boot2docker
 
 ### Step 2: Map the volume in VirtualBox
 
@@ -181,7 +181,9 @@ Alternatively, you may use the VirtualBox UI (Settings -> Shared Folders).
 
 ### Step 3: Mount the volume in boot2docker:
 
-Use `mount` to mount the MacOS directory in boot2docker. Usage:
+Use `mount` to mount the MacOS directory in boot2docker. 
+
+Usage:
 
 {% highlight sh %}
 docker@default:~$ mount --help
@@ -207,7 +209,7 @@ build/  build.gradle  settings.gradle  src/
 {% endhighlight %}
 
 Note, that `DEVICE` must correspond to the logical name of the shared folder defined
-in VirtualBox. If you missed the name, then following error message is returned:
+in VirtualBox above. If you missed the name, then following error message is returned:
 
 {% highlight sh %}
 docker@default:~$ sudo mount -t vboxsf -o defaults,uid=`id -u docker`,gid=`id -g docker` \
@@ -215,7 +217,7 @@ docker@default:~$ sudo mount -t vboxsf -o defaults,uid=`id -u docker`,gid=`id -g
 mount.vboxsf: mounting failed with the error: Protocol error
 {% endhighlight %}
 
-`NODE` must correspond an existing file path in boot2docker (not MacOS!). If you missed the name, then
+`NODE` must correspond an existing file path in boot2docker (not MacOS!). If you missed this name, then
 following error message is returned:
 
 {% highlight sh %}
@@ -259,5 +261,6 @@ mount -t vboxsf -o defaults,uid=`id -u docker`,gid=`id -g docker` hadoop /hadoop
     
 ## More information
 
-[StackOverflow](http://stackoverflow.com/questions/30040708/how-to-mount-local-volumes-in-docker-machine)
+See this [StackOverflow](http://stackoverflow.com/questions/30040708/how-to-mount-local-volumes-in-docker-machine)
+post.
  
