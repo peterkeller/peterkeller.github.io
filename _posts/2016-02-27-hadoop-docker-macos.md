@@ -11,31 +11,37 @@ modified_time: '2016-02-27T12:02:20.068+01:00'
 ---
 
 Instead of installing Hadoop directly on my MacBook, I decided to use a Docker
-container in order to not polute my development environment. 
+container. 
 
 Fortunatelly, there is already one Docker image ready to install that can be found
-on [https://github.com/sequenceiq/hadoop-docker](https://github.com/sequenceiq/hadoop-docker).
+at [https://github.com/sequenceiq/hadoop-docker](https://github.com/sequenceiq/hadoop-docker).
 
 
 ## Step 1: Download and install Docker infrastucture
 
-Download the infrastucure:
+Download Docker installer:
 
-- VirtualBox [https://www.virtualbox.org/](https://www.virtualbox.org/)
 - Docker installer [https://docker.com/toolbox](https://docker.com/toolbox)
 
-Double-click the DMG files and follow the instructions.
+Double-click the DMG file and follow the instructions.
+
+This will install:
+
+- VirtualBox
+- docker-machine
 
 
-## Step 2: Create Docker machine
+## Step 2: Create boot2docker
  
-Use [docker-machine](https://docs.docker.com/machine/) to create default Docker machine for VirtualBox driver:
+Use [docker-machine](https://docs.docker.com/machine/) to create a default boot2docker
+environment for VirtualBox driver. boot2docker is a Linux distribution 
+based on a stripped down [Tiny Core Linux](http://tinycorelinux.net/): 
 
 {% highlight sh %}
 > docker-machine create --driver virtualbox default
 {% endhighlight %}
 
-Check if default Docker machine is created:
+Check if the default boot2docker environment is successfully created:
 
 {% highlight sh %}
 > docker-machine ls 
@@ -44,7 +50,7 @@ default   *        virtualbox   Stopped                 Unknown
 {% endhighlight %}
 
 
-## Step 3: Start Docker daemon
+## Step 3: Start default boot2docker
 
 {% highlight sh %}
 > docker-machine start default 
@@ -53,8 +59,7 @@ default   *        virtualbox   Stopped                 Unknown
 This starts:
 
 - VirtualBox
-- Lightweight Linux VM made specifically to run the Docker daemon on Mac OS X
-- Docker daemon
+- boot2ocker Linux
 
 Check status:
 
@@ -67,7 +72,8 @@ default   -        virtualbox   Running   tcp://192.168.99.100:2376           v1
 
 ## Step 4: Init enviromental parameters
 
-Init the Docker specific enviromental parameters in the shell where do you will build the Docker image:
+Init the Docker specific environmental parameters in the shell where the Docker image
+will be built:
 
 {% highlight sh %}
 > eval "$(docker-machine env default)"
@@ -90,7 +96,7 @@ DOCKER_CERT_PATH=/Users/peter/.docker/machine/machines/default
 > git clone https://github.com/sequenceiq/hadoop-docker.git
 {% endhighlight %}
 
-The `hadoop-docker` has been created. Step into it, for the further processing:
+The `hadoop-docker` has been created. Step into it for the further processing:
 
 {% highlight sh %}
 > cd hadoop-docker
@@ -122,7 +128,7 @@ REPOSITORY                 TAG                 IMAGE ID            CREATED      
 sequenceiq/hadoop-docker   2.7.1               9e7e80f84015        9 minutes ago       1.769 GB
 {% endhighlight %}
 
-Alternatively, you may just pull the image instead of building it yourself:
+Alternatively, you may just pull the image instead of building it yourself (lazy way):
 
 {% highlight sh %}
 > docker pull sequenceiq/hadoop-docker:2.7.1
@@ -160,7 +166,7 @@ java version "1.7.0_71"
 {% endhighlight %}
 
 
-## Step 8: Check status of container from MacOS
+## Step 8: Check status of Docker container
 
 {% highlight sh %}
 > docker ps

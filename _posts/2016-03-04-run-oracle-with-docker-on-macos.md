@@ -10,8 +10,8 @@ tags:
 modified_time: '2016-03-04T12:02:20.068+01:00'
 ---
 
-This post shows how to build and start Oracle XE on MacOS
-using the Docker image provided by [https://github.com/wnameless/docker-oracle-xe-11g](https://github.com/wnameless/docker-oracle-xe-11g).
+This post shows how to build and start Oracle XE on MacOS using the Docker image provided by 
+[https://github.com/wnameless/docker-oracle-xe-11g](https://github.com/wnameless/docker-oracle-xe-11g).
 
 
 ## Step 1: Start Docker
