@@ -88,7 +88,7 @@ find the `test.txt` file.
 This was easy, the `-v` did the job.
 
 
-## Share any directory
+## Share any directory
 
 Mapping a directory in the user home was easy, as this directory is mounted
 automatically in docker-machine. However, this is not the case for directories
@@ -108,7 +108,7 @@ In our case, we are especially interested in the `build` directory with the
 the generated Hadoop Map/Reduce libraries we want to use in the Hadoop Docker 
 container. 
 
-### Step 1: Map
+### Step 1: Map
 
 Start Docker and map the project directory `/Projects/hadoop` to 
 `/usr/local/hadoop/test-project` as above:
@@ -257,8 +257,7 @@ mkdir -p /hadoop
 mount -t vboxsf -o defaults,uid=`id -u docker`,gid=`id -g docker` hadoop /hadoop  
 {% endhighlight %}    
     
-
-## More information
+## More information
 
 [StackOverflow](http://stackoverflow.com/questions/30040708/how-to-mount-local-volumes-in-docker-machine)
  
