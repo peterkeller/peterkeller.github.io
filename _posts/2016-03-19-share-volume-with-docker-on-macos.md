@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Share volume in a Docker Container on MacOS'
+title: 'Share volumes in a Docker Container on MacOS'
 date: '2016-03-19T12:02:20.068+01:00'
 author: Peter Keller
 tags:
@@ -10,8 +10,8 @@ modified_time: '2016-03-19T12:02:20.068+01:00'
 ---
 
 This post shows how to share any MacOS volume in a Docker container. We use
-docker-machine together with VirtualBox on MacOS. See older posts of mine
-how this can be done.
+docker-machine together with VirtualBox on MacOS. See an older 
+[post](2016/02/27/hadoop-docker-macos/) of mine how this can be done.
 
 ## Share user home directory
 
@@ -33,7 +33,7 @@ used to test if the mapping was successful:
 test.txt
 {% endhighlight %}
 
-### Step 1: Map
+### Step 1: Map the volumes
 
 Run Docker and map this directory to `/usr/local/hadoop/test-home` in the 
 Docker container. For this we use the `-v` option as follows:
@@ -47,7 +47,7 @@ Docker container. For this we use the `-v` option as follows:
 Check Docker mounts:
 
 {% highlight sh %}
-> docker inspect web
+> docker inspect <container-id>
 ...
     "Mounts": [
         {
@@ -99,8 +99,7 @@ outside of the user home directory as we will see below.
 First, let's see what's in the MacOS `/Projects/hadoop` directory that we want to map:
 
 {% highlight sh %}
-> cd /Projects/hadoop
-> ls
+> ls /Projects/hadoop
 build/  build.gradle  settings.gradle  src/
 {% endhighlight %}  
 
@@ -108,7 +107,7 @@ In our case, we are especially interested in the `build` directory with the
 generated Hadoop Map/Reduce libraries we want to use in the Hadoop Docker 
 container. 
 
-### Step 1: Map
+### Step 1: Map the volumes
 
 Start Docker and map the project directory `/Projects/hadoop` to 
 `/usr/local/hadoop/test-project` as above:
@@ -123,7 +122,7 @@ docker run \
 Check Docker mounts:
 
 {% highlight sh %}
-> docker inspect web
+> docker inspect <container-id>
 ...
     "Mounts": [
         {
@@ -179,7 +178,7 @@ Start the VirtualBox again with `docker-machine start default`.
 
 Alternatively, you may use the VirtualBox UI (Settings -> Shared Folders).
 
-### Step 3: Mount the volume in boot2docker:
+### Step 3: Mount the volume in boot2docker
 
 Use `mount` to mount the MacOS directory in boot2docker. 
 
