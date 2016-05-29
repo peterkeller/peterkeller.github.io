@@ -89,10 +89,10 @@ is overridden:
 {% highlight sh %}
 docker@default:~$ cat /mnt/sda1/var/lib/boot2docker/bootlocal.sh
 #!/bin/sh
-  sudo umount /Users
-    sudo mkdir -p /Projects/hadoop
-  sudo /usr/local/etc/init.d/nfs-client start
-    sudo mount -t nfs -o noacl,async 192.168.99.1:/Projects/hadoop /Projects/hadoop
+sudo umount /Users
+sudo mkdir -p /Projects/hadoop
+sudo /usr/local/etc/init.d/nfs-client start
+sudo mount -t nfs -o noacl,async 192.168.99.1:/Projects/hadoop /Projects/hadoop
 {% endhighlight %}
 
 I.e., `/Projects/hadoop` in MacOS is mapped to `/Projects/hadoop` in boot2docker.

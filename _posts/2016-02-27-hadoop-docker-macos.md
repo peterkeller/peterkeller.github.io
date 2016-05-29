@@ -70,7 +70,7 @@ default   -        virtualbox   Running   tcp://192.168.99.100:2376           v1
 {% endhighlight %}
 
 
-## Step 4: Init enviromental parameters
+## Step 4: Init environmental parameters
 
 Init the Docker specific environmental parameters in the shell where the Docker image
 will be built:
@@ -79,7 +79,7 @@ will be built:
 > eval "$(docker-machine env default)"
 {% endhighlight %}
 
-Check the enviromental parameters:
+Check the environmental parameters:
 
 {% highlight sh %}
 > env | grep DOCKER
